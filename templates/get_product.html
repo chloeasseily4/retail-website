@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Product</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+    
+        <!-- Images arranged in a 2x3 grid -->
+        <div class="grid-container">
+            <img src="/static/images/6.jpg" alt="Product Image 3" class="product-image">
+            <img src="/static/images/15.jpg" alt="Product Image 3" class="product-image">
+            <img src="/static/images/10.jpg" alt="Product Image 3" class="product-image">
+            <img src="/static/images/12.jpg" alt="Product Image 3" class="product-image">
+            <img src="/static/images/13.jpg" alt="Product Image 3" class="product-image">
+            <img src="/static/images/14.jpg" alt="Product Image 3" class="product-image">
+        </div>
+    
+        <img src="/static/images/5.jpg" alt="Product Image 3" class="product-image">
+
+         <!-- Product form -->
+         <form method="POST" action="/get_product" class="product-form">
+            <label for="product_code">Product Code:</label>
+            <input type="number" name="product_code" id="product_code" required>
+            <input type="submit" value="Get Product" class="get-product-button">
+        </form>
+        
+    </div>
+    
+    <a href="/" class="home-link">Return to Home Page</a>
+</body>
+</html>

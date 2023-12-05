@@ -1,0 +1,360 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li, form, input, button, select {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Body and Global Styles */
+body {
+    background-color: #f7f7f7; /* Light greyish background for a clean look */
+    color: #333; /* Dark grey for readability */
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 1rem;
+}
+
+/* Centering Content */
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.nav-bar ul li a:hover {
+    color: #555;
+}
+
+/* Headers */
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    background: #fff;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+/* Content */
+.content {
+    padding: 0 1.5rem; /* Padding on the sides */
+}
+
+/* Form Styles */
+.form-customer {
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.form-customer label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-customer input[type='text'],
+.form-customer input[type='date'],
+.form-customer select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-customer input[type='submit'] {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-customer input[type='submit']:hover {
+    background-color: #555;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Home Link */
+.home-link {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin: 2rem auto;
+    width: fit-content;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7; /* Light greyish background */
+    color: #333; /* Dark grey text */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header-homepage {
+    background-color: #fff; /* White background */
+    color: #333;
+    padding: 2rem;
+    text-align: center; /* Center text */
+}
+
+/* Navigation Bar Styles */
+.nav-bar-homepage {
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.nav-bar-homepage ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-bar-homepage li {
+    padding: 0 2rem;
+}
+
+.nav-bar-homepage a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-bar-homepage a:hover {
+    color: #555;
+}
+
+/* Content Styles */
+.content-homepage {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 2rem;
+}
+
+.content-homepage img {
+    max-width: 100%; /* Make images responsive */
+    margin-bottom: 2rem; /* Add space between images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar-homepage ul {
+        flex-direction: column;
+    }
+
+    .nav-bar-homepage li {
+        padding: 1rem 0;
+    }
+}
+
+/* Products Page Styles */
+/* Header Styles */
+.header-products {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 2rem;
+    text-align: center; /* Center text */
+}
+
+.header-products h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+/* Content Styles */
+.content-products {
+    padding: 0 1.5rem; /* Padding on the sides */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Sort Button Styles */
+.sort-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Get Product Icon Styles */
+.product-image {
+    max-width: 100%; /* Make sure the image fits within its container */
+    margin-bottom: 2rem; /* Add some spacing */
+    filter: brightness(1); /* Increase brightness to make it more visible */
+}
+
+/* Adjust the hover effect for better visibility */
+.product-image:hover {
+    filter: brightness(0.8); /* Increase brightness on hover */
+}
+/* Get Product Button Styles */
+.get-product-button {
+    font-size: 1rem; /* Increase font size for better visibility */
+    padding: 1rem 2rem; /* Increase padding for a larger button */
+    background-color: #333; /* Use a dark background for contrast */
+    color: #fff; /* Use white text for contrast */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    text-transform: uppercase; /* Optional: make the text uppercase for stylistic preference */
+    font-weight: 600; /* Optional: make the font weight bold for emphasis */
+}
+
+.get-product-button:hover {
+    background-color: #555; /* Change color on hover for interactive effect */
+}
+
+
+/* Grid Container Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates a responsive grid layout */
+    gap: 1rem; /* Spacing between grid items */
+    padding: 3rem; /* Padding around the grid container */
+}

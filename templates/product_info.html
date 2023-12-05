@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Information</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/get_product">Get Another Product</a></li>
+        </ul>
+    </div>
+
+    <h1>Product Information</h1>
+    {% if product %}
+    <div class="product-info">
+        <h2>{{ product.product_name }}</h2>
+        <p><strong>Code:</strong> {{ product.product_code }}</p>
+        <p><strong>Description:</strong> {{ product.product_description }}</p>
+        <p><strong>Price:</strong> ${{ product.product_price }}</p>
+        <p><strong>Inventory:</strong> {{ product.product_inventory }}</p>
+        <p><strong>Vendor:</strong> {{ product.product_vendor }}</p>
+    </div>
+    {% else %}
+    <p>Product not found. Please try a different Product Code.</p>
+    {% endif %}
+</body>
+</html>
+

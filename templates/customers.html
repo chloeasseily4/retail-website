@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="{{ url_for('add_customer') }}">Add Customer</a></li>
+        </ul>
+    </div>
+    <h1>Customer List</h1>
+    
+    <!-- Add a form for sorting -->
+    <form action="/sort_customers" method="get">
+        <label for="sort_by">Sort by:</label>
+        <select name="sort_by" id="sort_by">
+            <option value="customer_id">ID</option>
+            <option value="customer_last_name">Last Name</option>
+            <option value="customer_first_name">First Name</option>
+            <option value="customer_gender">Gender</option>
+            <option value="customer_dob">Date of Birth</option>
+        </select>
+        <input type="submit" value="Sort">
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for customer in customers %}
+            <tr>
+                <td>{{ customer.customer_id }}</td>
+                <td>{{ customer.customer_last_name }}</td>
+                <td>{{ customer.customer_first_name }}</td>
+                <td>{{ customer.customer_gender }}</td>
+                <td>{{ customer.customer_dob }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="5">No customers found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/" class="home-link">Return to Home Page</a>
+</body>
+</html>
